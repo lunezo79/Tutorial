@@ -1,0 +1,3 @@
+.client.luau = client script
+.server.luau = server script
+.luau = module script
