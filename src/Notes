@@ -1,0 +1,14 @@
+--roblox studio
+
+.client.luau = client script
+.server.luau = server script
+.luau = module script
+Window -> Script -> Objecat Browser
+
+--VSC
+Alt + Arrow Up,Down = Move Selected
+Alt + Arrow Left,Right = Move Tabs
+Ctrl + Arrow Up,Down = Mouse Scroll
+Ctrl + Arrow Left,Right = Move Words
+Arrow left,right = Move Row
+Arrow Up,Down = Move Column

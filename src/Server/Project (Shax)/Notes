@@ -1,0 +1,18 @@
+Task N.O. 1
+
+Sometimes we need to create our own body movers (objects/classes that operate on position directly, without Roblox Physics Engine interfering). The easiest non-trivial movement we might find useful (especially in UI animations and other particle-emitter handlers) is circular motion.
+
+Goal: To get used to LUAU syntax, familiarize ourselves with a concept of Instance and Workspace, familiarize yourself with Parts as objects and their properties (Anchored, Position).
+
+Important: While it is tempting, do not re-create already existing classes, for example do not create your custom vector3 class, as per rules of computation (virtual machine versus roblox native C++ implementation) their built-in classes are significantly faster.
+
+Using the unit circle formula (cosine, sine and radius) create a script in ServerScriptService that will:
+
+1. Create a part
+2. Parent it to workspace (parenting is act of assigning, assignment to workspace allows the camera to visualize the part)
+3. Place it at an arbitrary p0 position (any vector3)
+4. Spin the part around the p0 at radius R
+5. [Optional 1]: use metatables and create them with LUAU OOP rules in mind, [either simplified or traditional approach for OOP]
+6. [Optional 2]: make the movement framerate-independent (I can show you how to modify renderer framerate artifically)
+7. [Optional 3]: make p0 and R modifiable during runtime (hint: use a separate ANCHORED part as p0 rather than pure Vector3 position, and another part for radius)
+8. [Optional 4]: Before compilation (AKA. before playtesting in the Roblox Studio) change the movement to an elliptical movement (it relates to the unit circle), and add variables to modify such trajectory before launching the test play.
